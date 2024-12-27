@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.4 on win32)" generated="2024-12-27T10:14:22.490981" rpa="false" schemaversion="5">
+<suite id="s1" name="LoginTest" source="C:\Users\user\PycharmProjects\A_01\TestCases\LoginTest.robot">
+<test id="s1-t1" name="Login Test" line="12">
+<kw name="Open my Browser" owner="LoginKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-27T10:14:23.721664" level="INFO">Opening browser 'chrome' to base url 'https://demo.guru99.com/test/newtours/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-27T10:14:23.721664" elapsed="9.472753"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-12-27T10:14:33.195417" elapsed="0.076002"/>
+</kw>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<status status="PASS" start="2024-12-27T10:14:23.713659" elapsed="9.557760"/>
+</kw>
+<kw name="Enter UserName" owner="LoginKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-27T10:14:33.276418" level="INFO">Typing text 'tutorial' into text field 'name:userName'.</msg>
+<arg>${txt_loginUserName}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-27T10:14:33.274415" elapsed="0.674535"/>
+</kw>
+<arg>${user}</arg>
+<status status="PASS" start="2024-12-27T10:14:33.273416" elapsed="0.676538"/>
+</kw>
+<kw name="Enter Password" owner="LoginKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-27T10:14:33.951948" level="INFO">Typing text 'tutorial' into text field 'name:password'.</msg>
+<arg>${txt_loginPassword}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-27T10:14:33.950953" elapsed="0.279999"/>
+</kw>
+<arg>${pwd}</arg>
+<status status="PASS" start="2024-12-27T10:14:33.949954" elapsed="0.280998"/>
+</kw>
+<kw name="Click Submit" owner="LoginKeywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-12-27T10:14:34.234950" level="INFO">Clicking button 'xpath://input[@name='submit']'.</msg>
+<arg>${btn_signIn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-27T10:14:34.232948" elapsed="1.752803"/>
+</kw>
+<status status="PASS" start="2024-12-27T10:14:34.231952" elapsed="1.754798"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-27T10:14:38.988147" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-27T10:14:35.986750" elapsed="3.001397"/>
+</kw>
+<kw name="Verify Successful login" owner="LoginKeywords">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-12-27T10:14:39.007148" level="INFO">Page title is 'Login: Mercury Tours'.</msg>
+<arg>Login: Mercury Tours</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-12-27T10:14:38.991148" elapsed="0.016000"/>
+</kw>
+<status status="PASS" start="2024-12-27T10:14:38.990147" elapsed="0.017001"/>
+</kw>
+<kw name="Close my browser" owner="LoginKeywords">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-12-27T10:14:39.009145" elapsed="7.449381"/>
+</kw>
+<status status="PASS" start="2024-12-27T10:14:39.008146" elapsed="7.451379"/>
+</kw>
+<status status="PASS" start="2024-12-27T10:14:23.710673" elapsed="22.763852"/>
+</test>
+<status status="PASS" start="2024-12-27T10:14:22.496981" elapsed="23.980544"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="LoginTest">LoginTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
